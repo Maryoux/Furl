@@ -24,7 +24,6 @@ def fetch_parameters_from_wayback(domain, output_filename=None):
             if urls_with_parameters:
                 if output_filename:
                     with open(output_filename, 'w') as output_file:
-                        output_file.write(f"Wayback Machine URLs with parameters for {domain}:\n")
                         for url in urls_with_parameters:
                             output_file.write(url + '\n')
                     print(f"Filtered URLs saved to {output_filename}")
