@@ -1,6 +1,6 @@
 import argparse
-import requests
 import urllib.parse
+import requests
 
 def fetch_parameters_from_wayback(domain, output_filename=None):
     wayback_url = f"http://web.archive.org/cdx/search/cdx?url={domain}/*&output=json&fl=original&collapse=urlkey&limit=10000"
