@@ -7,7 +7,7 @@
 <a href="https://github.com/maryoux/furl/issues"><img src="https://img.shields.io/github/issues-raw/tterb/PlayMusic.svg?maxAge=25000">
 <a href="https://github.com/Maryoux/furl/fork"><img src="https://img.shields.io/github/forks/maryoux/furl">
 <img src="https://img.shields.io/github/stars/maryoux/furl">
-<img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+<a href="https://github.com/Maryoux/furl/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg">
 </p>
 
 ---
