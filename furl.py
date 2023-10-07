@@ -9,6 +9,8 @@ Options:
     -o, --output       Specify an optional output .txt file name.
 """
 import argparse
+import sys
+from banner import display_banner
 from fetch import fetch_parameters_from_wayback
 
 def main():
@@ -17,12 +19,12 @@ def main():
     from parsing command-line arguments to invoking the core 
     functionality and controlling the output based on the provided arguments.
     """
-    parser = argparse.ArgumentParser(description="Fetch parameters from the Wayback Machine")
+    parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--domain', required=True, help='Domain name (e.g., domain.com)')
     parser.add_argument('-o', '--output', help='Specify the output .txt file name')
-
-    args = parser.parse_args()
+    args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
     fetch_parameters_from_wayback(args.domain, args.output)
 
 if __name__ == "__main__":
+    display_banner()
     main()
