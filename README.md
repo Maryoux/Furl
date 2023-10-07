@@ -18,12 +18,13 @@ Furl is a tool for mining URLs from WayBack Machine for bug hunting/fuzzing/furt
         Maryoux
 
 
-usage: furl.py [-h] -d DOMAIN [-o OUTPUT]
+usage: furl.py [-h] (-d DOMAIN | -l LIST) [-o OUTPUT]
 
 options:
   -h, --help            show this help message and exit
   -d DOMAIN, --domain DOMAIN
-                        Domain name (e.g., domain.com)
+                        Single domain name (e.g., domain.com)
+  -l LIST, --list LIST  Path to a .txt file containing a list of domains
   -o OUTPUT, --output OUTPUT
                         Specify the output .txt file name
 ```
