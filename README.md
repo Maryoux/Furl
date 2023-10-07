@@ -1,11 +1,17 @@
-# Furl
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django) [![Issues](https://img.shields.io/github/issues-raw/tterb/PlayMusic.svg?maxAge=25000)](https://github.com/maryoux/furl/issues) ![Contributor](https://img.shields.io/github/contributors/maryoux/furl) ![GitHub forks](https://img.shields.io/github/forks/maryoux/furl) ![GitHub Repo stars](https://img.shields.io/github/stars/maryoux/furl) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<h1 align="center">Furl</h1>
+<h4 align="center">Mining URLs from Wayback Machine for bug hunting/fuzzing/further probing</h4>
 
-
-
+<p align="center">
+<img src="https://img.shields.io/pypi/pyversions/django">
+<a href="https://github.com/maryoux/furl/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/maryoux/furl">
+<a href="https://github.com/maryoux/furl/issues"><img src="https://img.shields.io/github/issues-raw/tterb/PlayMusic.svg?maxAge=25000">
+<img src="https://img.shields.io/github/forks/maryoux/furl">
+<img src="https://img.shields.io/github/stars/maryoux/furl">
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+</p>
 
 # Introduction
-Furl is a tool for mining URLs from WayBack Machine for bug hunting/fuzzing/further probing
+Furl is a tool for mining URLs from Wayback Machine for bug hunting/fuzzing/further probing
 # Usage
 ```
     ____           __
