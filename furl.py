@@ -22,7 +22,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--domain', required=True, help='Domain name (e.g., domain.com)')
     parser.add_argument('-o', '--output', help='Specify the output .txt file name')
-    args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
+    args = parser.parse_args(args=None if sys.argv[1:] else ['-help'])
     fetch_parameters_from_wayback(args.domain, args.output)
 
 if __name__ == "__main__":
