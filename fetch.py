@@ -6,7 +6,7 @@ from requests.exceptions import RequestException
 def fetch_parameters_from_wayback(domain, output_filename=None):
     """
     This function is used to fetch URLs with parameters from the Wayback Machine 
-    for a given domain and potentially save them to an output file
+    for a given domain and append them to an output file
     """
     wayback_url = (
         f"http://web.archive.org/cdx/search/cdx?url={domain}/*"
@@ -33,18 +33,19 @@ def fetch_parameters_from_wayback(domain, output_filename=None):
                     urls_with_parameters.append(url)
 
             if urls_with_parameters:
+                count = len(urls_with_parameters)
                 if output_filename:
-                    with open(output_filename, 'w', encoding='utf-8') as output_file:
+                    with open(output_filename, 'a', encoding='utf-8') as output_file:
                         for url in urls_with_parameters:
                             output_file.write(url + '\n')
-                    print(f"Filtered {len(urls_with_parameters)} URLs saved to {output_filename}")
+                    print(f"Filtered {count} URLs for {domain} saved to {output_filename}")
                 else:
                     for url in urls_with_parameters:
                         print(url)
             else:
-                print(f"No URLs with parameters found for {domain} in the Wayback Machine.")
+                print(f"No URLs with parameters found for {domain}.")
         else:
-            print(f"No snapshots found for {domain} in the Wayback Machine.")
+            print(f"No snapshots found for {domain}.")
 
     except RequestException as e:
-        print(f"An error occurred during the request: {e}")
+        print(f"An error occurred during the request for {domain}: {e}")
