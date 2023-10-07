@@ -10,7 +10,7 @@
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
 </p>
 
-# Introduction
+---
 Furl is a tool for mining URLs from Wayback Machine for bug hunting/fuzzing/further probing
 # Usage
 ```
