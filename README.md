@@ -1,5 +1,5 @@
 # Furl
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django) [![Issues](https://img.shields.io/github/issues-raw/tterb/PlayMusic.svg?maxAge=25000)](https://github.com/maryoux/furl/issues) ![Contributor](https://img.shields.io/github/contributors/maryoux/furl) ![GitHub forks](https://img.shields.io/github/forks/maryoux/furl) ![GitHub Repo stars](https://img.shields.io/github/stars/maryoux/furl) ![GitHub](https://img.shields.io/github/license/maryoux/furl)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django) [![Issues](https://img.shields.io/github/issues-raw/tterb/PlayMusic.svg?maxAge=25000)](https://github.com/maryoux/furl/issues) ![Contributor](https://img.shields.io/github/contributors/maryoux/furl) ![GitHub forks](https://img.shields.io/github/forks/maryoux/furl) ![GitHub Repo stars](https://img.shields.io/github/stars/maryoux/furl) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 
