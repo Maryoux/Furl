@@ -37,7 +37,7 @@ def fetch_parameters_from_wayback(domain, output_filename=None):
                     with open(output_filename, 'w', encoding='utf-8') as output_file:
                         for url in urls_with_parameters:
                             output_file.write(url + '\n')
-                    print(f"Filtered URLs saved to {output_filename}")
+                    print(f"Filtered {len(urls_with_parameters)} URLs saved to {output_filename}")
                 else:
                     for url in urls_with_parameters:
                         print(url)
