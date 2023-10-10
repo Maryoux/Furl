@@ -7,6 +7,7 @@ Usage:
 Options:
     -d, --domain       Specify a single domain name to search for (e.g., domain.com).
     -l, --list         Specify a .txt file containing a list of domains, one per line.
+    -p, --parameter    Specify the parameter value.
     -o, --output       Specify an optional output .txt file name.
 """
 import argparse
@@ -25,15 +26,15 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('-d', '--domain', help='Single domain name (e.g., domain.com)')
     group.add_argument('-l', '--list', help='Path to a .txt file containing a list of domains')
-
+    parser.add_argument('-p', '--parameter', help='Specify the parameter value', default='FUZZ')
     parser.add_argument('-o', '--output', help='Specify the output .txt file name')
 
     args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
 
     if args.domain:
-        fetch_parameters_from_wayback(args.domain, args.output)
+        fetch_parameters_from_wayback(args.domain, args.output, args.parameter)
     elif args.list:
-        fetch_parameters_from_list(args.list, args.output)
+        fetch_parameters_from_list(args.list, args.output, args.parameter)
 
 if __name__ == "__main__":
     display_banner()
