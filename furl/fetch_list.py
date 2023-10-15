@@ -1,7 +1,7 @@
 """
     Fetching URLs from list of domains
 """
-from fetch import fetch_parameters_from_wayback
+from .fetch import fetch_parameters_from_wayback
 
 def fetch_parameters_from_list(input_filename, output_filename=None, parameter_value="FUZZ"):
     """
