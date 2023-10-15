@@ -14,7 +14,8 @@
 
 ---
 Furl is a tool for mining URLs from Wayback Machine for bug hunting/fuzzing/further probing
-![ray-so-export (1)](https://github.com/Maryoux/furl/assets/69157007/438982c2-94a0-480a-8ead-3edd3567465f)
+![ray-so-export (2)](https://github.com/Maryoux/furl/assets/69157007/0ad46660-51d1-47fe-9766-62e070a8234a)
+
 
 # Installation
 ```sh
