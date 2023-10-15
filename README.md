@@ -20,7 +20,7 @@ Furl is a tool for mining URLs from Wayback Machine for bug hunting/fuzzing/furt
 ```sh
 git clone https://github.com/Maryoux/furl.git
 cd furl
-pip install -r requirement.txt
+pip install .
 ```
 # Usage
 To use `furl`, run this command below:

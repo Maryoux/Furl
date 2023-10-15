@@ -49,10 +49,10 @@ def get_wayback_data(domain):
     """
     wayback_url = (
         f"http://web.archive.org/cdx/search/cdx?url={domain}/*"
-        "&output=json&fl=original&collapse=urlkey&limit=10000"
+        "&output=json&fl=original&collapse=urlkey&statuscode:200"
     )
 
-    response = requests.get(wayback_url, timeout=3)
+    response = requests.get(wayback_url, timeout=10)
     data = response.json()
     return data
 
