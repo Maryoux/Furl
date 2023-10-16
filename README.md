@@ -26,5 +26,5 @@ pip install .
 # Usage
 To use `furl`, run this command below:
 ```
-python furl.py -d example.com
+furl -d example.com
 ```
